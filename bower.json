@@ -1,0 +1,21 @@
+{
+  "name": "Polecam",
+  "repository": {
+    "type": "git"
+  },
+  "description": "Framework7 Polecam App",
+  "version": "1.0.0",
+  "author": "Ali Sabri Sanal",
+  "main": "./",
+  "license": ["MIT"],
+  "ignore": [
+    ".*",
+    "gulpfile.js",
+    "node_modules",
+    "package.json",
+    "libs"
+  ],
+  "dependencies": {
+    "framework7": "latest"
+  }
+}

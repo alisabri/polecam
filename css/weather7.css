@@ -1,0 +1,25 @@
+.circle {
+  position: relative;
+  display: inline-block;
+}
+.circle-percent-text-body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.percent-text {
+  font-weight: bold;
+}
+
+//                  li
+//                    .item-content
+//                      .item-inner
+//                        .item-title Battery Usage
+//                        #batteryUsage.circle
+//                          .circle-percent-text-body

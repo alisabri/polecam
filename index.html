@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>PoleCam</title>
+    <link rel="stylesheet" href="libs/framework7/dist/css/framework7.material.min.css">
+    <link rel="stylesheet" href="libs/framework7/dist/css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="css/polecam.css">
+    <link rel="icon" href="img/icon.png">
+  </head>
+  <body>
+    <!-- Main views-->
+    <div class="views">
+      <div class="view view-main"> 
+        <div class="pages">
+          <div data-page="index" class="page navbar-fixed toolbar-fixed">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center">PoleCam</div>
+              </div>
+            </div>
+            <div class="toolbar toolbar-bottom">
+              <div class="toolbar-inner"><a href="pages/schedule.html" class="link">Schedule</a><a href="pages/preview.html" class="link">Preview</a><a href="pages/folder.html" class="link">Folder</a></div>
+            </div>
+            <div class="page-content">
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">Project</div>
+                        <div class="item-after">
+                          <input type="text" placeholder="project name">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">Station</div>
+                        <div class="item-after">
+                          <input type="text" placeholder="station name">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media button"><i class="icon f7-icons">reload_round</i></div>
+                      <div class="item-inner">
+                        <div class="item-title">Disk Usage</div>
+                        <div class="item-after"><span id="diskUsage" class="badge">5</span></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media button"><i class="icon f7-icons">reload_round</i></div>
+                      <div class="item-inner">
+                        <div class="item-title">Battery Usage</div>
+                        <div class="item-after"><span id="batteryUsage" class="badge">5</span></div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-block">
+                <div>
+                  <div class="switch">
+                    <input type="checkbox">
+                    <label></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="libs/framework7/dist/js/framework7.min.js"></script>
+    <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/jquery-circle-progress/dist/circle-progress.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/polecam.js"></script>
+  </body>
+</html>

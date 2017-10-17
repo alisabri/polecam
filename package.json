@@ -1,0 +1,28 @@
+{
+  "name": "weather7-material",
+  "version": "1.0.0",
+  "description": "Framework7 weather demo app in Material style",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nolimits4web/Weather7-Material.git"
+  },
+  "author": "Vladimir Kharlampidi",
+  "license": [
+    "MIT"
+  ],
+  "bugs": {
+    "url": "https://github.com/nolimits4web/Weather7-Material/issues"
+  },
+  "homepage": "http://www.idangero.us/framework7/",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-connect": "~5.0.0",
+    "gulp-jade": "~1.1.0",
+    "gulp-less": "~3.3.2",
+    "gulp-open": "~2.0.0",
+    "gulp-rename": "^1.2.2"
+  }
+}

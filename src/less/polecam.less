@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'Framework7 Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Framework7Icons-Regular.eot");
+  src: local('Framework7 Icons'),
+     local('Framework7Icons-Regular'),
+     url("../fonts/Framework7Icons-Regular.woff2") format("woff2"),
+     url("../fonts/Framework7Icons-Regular.woff") format("woff"),
+     url("../fonts/Framework7Icons-Regular.ttf") format("truetype");
+}
+
+.f7-icons, .framework7-icons {
+  font-family: 'Framework7 Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+}
+
+.circle {
+  position: relative;
+  display: inline-block;
+}
+.circle-percent-text-body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.percent-text {
+  font-weight: bold;
+}
+
+.switch input {
+    /* First, we make it as wide as the container */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* Then, we put it on top of everything else */
+    z-index: 100;
+    /* Last, we make it invisible */
+    opacity: 0;
+    /* This one is just for ergonomy */
+    cursor: pointer;
+}
+
+.switch {
+    width: 80px;
+    height: 80px;
+    margin:0 auto;
+    position: relative;
+
+}
+
+.switch label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+    background: #eaeaea;
+    box-shadow:
+        0 3px 5px rgba(0,0,0,0.25),
+        inset 0 1px 0 rgba(255,255,255,0.3),
+        inset 0 -5px 5px rgba(100,100,100,0.1),
+        inset 0 5px 5px rgba(255,255,255,0.3);
+}
+
+.switch label:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -8%;
+    right: -8%;
+    bottom: -8%;
+    left: -8%;
+    border-radius: inherit;
+    background: #ddd; /* Fallback */
+    background: linear-gradient(#ccc, #fff);
+    box-shadow:
+        inset 0 2px 1px rgba(0,0,0,0.15),
+        0 2px 5px rgba(200,200,200,0.1);
+}
+
+.switch label:before {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    left: 40%;
+    top: 40%;
+    border-radius: inherit;
+    background: #969696; /* Fallback */
+    background: radial-gradient(40% 35%, #ccc, #969696 60%);
+    box-shadow:
+        inset 0 2px 4px 1px rgba(0,0,0,0.3),
+        0 1px 0 rgba(255,255,255,1),
+        inset 0 1px 0 white;
+}
+
+.switch input:checked ~ label { /* Button */
+	background: #e5e5e5; /* Fallback */
+    background: linear-gradient(#dedede, #fdfdfd);
+}
+
+.switch input:checked ~ label:before { /* LED */
+    background: #25d025; /* Fallback */
+    background: radial-gradient(40% 35%, #5aef5a, #25d025 60%);
+    box-shadow:
+        inset 0 3px 5px 1px rgba(0,0,0,0.1),
+        0 1px 0 rgba(255,255,255,0.4),
+        0 0 10px 2px rgba(0, 210, 0, 0.5);
+    animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0,210,0,0.4);
+  }
+  80% {
+      -webkit-box-shadow: 0 0 0 30px rgba(0,210,0,0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0,210,0,0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(0,210,0, 0.4);
+    box-shadow: 0 0 0 0 rgba(0,210,0, 0.4);
+  }
+  80% {
+      -moz-box-shadow: 0 0 0 30px rgba(0,210,0,0);
+      box-shadow: 0 0 0 30px rgba(0,210,0,0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(0,210,0,0);
+      box-shadow: 0 0 0 0 rgba(0,210,0,0);
+  }
+}

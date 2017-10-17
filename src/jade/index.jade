@@ -1,0 +1,73 @@
+doctype
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui")
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    title PoleCam
+    link(rel="stylesheet", href="libs/framework7/dist/css/framework7.material.min.css")
+    link(rel="stylesheet", href="libs/framework7/dist/css/framework7.material.colors.min.css")
+    link(rel="stylesheet", href="css/polecam.css")
+    link(rel="icon", href="img/icon.png")
+  body
+    // Main views
+    .views
+      .view.view-main 
+        .pages
+          .page.navbar-fixed.toolbar-fixed(data-page="index")
+            .navbar
+              .navbar-inner
+                .center PoleCam
+            
+            .toolbar.toolbar-bottom
+              .toolbar-inner
+                a.link(href='pages/schedule.html') Schedule
+                a.link(href='pages/preview.html') Preview
+                a.link(href='pages/folder.html') Folder
+                  
+            .page-content
+              .list-block
+                ul
+                  li
+                    .item-content
+                      .item-inner
+                        .item-title Project
+                        .item-after
+                          input(type='text', placeholder='project name')
+                  li
+                    .item-content
+                      .item-inner
+                        .item-title Station
+                        .item-after
+                          input(type='text', placeholder='station name')
+                  li
+                    .item-content
+                      .item-media.button
+                        i.icon.f7-icons reload_round
+                      .item-inner
+                        .item-title Disk Usage
+                        .item-after
+                          span#diskUsage.badge 5
+                  li
+                    .item-content
+                      .item-media.button
+                        i.icon.f7-icons reload_round
+                      .item-inner
+                        .item-title Battery Usage
+                        .item-after
+                          span#batteryUsage.badge 5
+
+              .content-block
+                  div
+                    .switch
+                      input(type='checkbox')
+                      label
+                  
+    // Path to Framework7 Library JS
+    script(type="text/javascript", src="libs/framework7/dist/js/framework7.min.js")
+    script(type="text/javascript", src="libs/jquery/dist/jquery.min.js")
+    script(type="text/javascript", src="libs/jquery-circle-progress/dist/circle-progress.min.js")
+    // Path to your app js
+    script(type="text/javascript", src="js/polecam.js")
+    
+    
