@@ -7,7 +7,9 @@
   "version": "1.0.0",
   "author": "Ali Sabri Sanal",
   "main": "./",
-  "license": ["MIT"],
+  "license": [
+    "MIT"
+  ],
   "ignore": [
     ".*",
     "gulpfile.js",
@@ -16,6 +18,7 @@
     "libs"
   ],
   "dependencies": {
-    "framework7": "latest"
+    "framework7": "latest",
+    "jquery": "^3.2.1"
   }
 }

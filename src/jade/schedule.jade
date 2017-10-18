@@ -9,4 +9,34 @@
   .toolbar.toolbar-bottom
     .toolbar-inner
       a.link(href='pages/preview.html') Preview
-      a.link(href='pages/folder.html') Folder          
+      a.link(href='pages/folder.html') Folder
+      
+  .page-content
+    .content-block
+      .content-block-inner.row
+        div.col-20
+          label.label-checkbox.item-content
+            // Checked by default
+            input(type='checkbox', name='my-checkbox', value='Books', checked='checked')
+            .item-media
+              i.icon.icon-form-checkbox
+            .item-inner
+              .item-title Books
+        div.col-40
+          .item-content
+            .item-inner
+              .item-title.label From
+              .item-input
+                input(type='time')        
+        div.col-40
+          .item-content
+            .item-inner
+              .item-title.label To
+              .item-input
+                input(type='time')        
+        
+        
+        
+        
+        
+        
