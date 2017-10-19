@@ -6,5 +6,5 @@ define(["app"], function(app) {
     return {
       init: init
     };
-    
+
 });
