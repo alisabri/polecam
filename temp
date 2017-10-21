@@ -1,0 +1,22 @@
+.list-block
+  ul.row
+
+    li.col-40
+      label.label-checkbox.item-content
+        .item-inner
+          .item-title Default
+        input(type='checkbox', name='my-checkbox', value='Movies')
+        .item-media
+          i.icon.icon-form-checkbox
+
+    li.item-content.col-30
+      .item-inner
+        .item-title From
+        .item-input
+          input#timeFrom.time-picker(type='text', min='00:00', max='23:59', placeholder='hh:mm', readonly)
+
+    li.item-content.col-30
+      .item-inner
+        .item-title To
+        .item-input
+          input#timeTo.time-picker(type='text', min='00:00', max='23:59', placeholder='hh:mm', readonly)

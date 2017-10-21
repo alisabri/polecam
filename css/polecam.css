@@ -137,3 +137,15 @@
     box-shadow: 0 0 0 0 rgba(0, 210, 0, 0);
   }
 }
+.item-input.line-input {
+  margin-bottom: 0px;
+  margin-left: 10px;
+  display: inline-flex;
+}
+.line-item {
+  display: inline-flex !important;
+}
+.line-item .item-title {
+  overflow: visible;
+  min-width: unset;
+}

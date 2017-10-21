@@ -10,18 +10,36 @@
     .toolbar-inner
       a.link(href='pages/preview.html') Preview
       a.link(href='pages/folder.html') Folder
-      
+  
   .page-content
+  
     .list-block
       ul
+      
+        li
+          label#defaultRange.item-content.label-checkbox.label-float
+            .item-inner.line-item
+              .item-title Default
+              input(type='checkbox', name='my-checkbox', value='Movies')
+              .item-media
+                i.icon.icon-form-checkbox
+            .item-inner.line-item
+              .item-title From:
+              .item-input.line-input
+                input#timeFrom.time-picker(type='text', min='00:00', max='23:59', placeholder='hh:mm', readonly)
+            .item-inner.line-item
+              .item-title To:
+              .item-input.line-input
+                input#timeTo.time-picker(type='text', min='00:00', max='23:59', placeholder='hh:mm', readonly)
+                
         li
           .item-content
-            .item-inner
-              .item-title From
-              .item-input
-                input#picker-describe(type='text', placeholder='Describe yourself', readonly='')      
+            .item-inner.line-item
+              .item-title Start Date:
+              .item-input.line-input
+                input#startDate(type='text', placeholder='Select date', readonly='')
         
-        
+    .list-block
         
         
         

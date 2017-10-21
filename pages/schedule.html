@@ -13,16 +13,38 @@
     <div class="list-block">
       <ul>
         <li>
+          <label id="defaultRange" class="item-content label-checkbox label-float">
+            <div class="item-inner line-item">
+              <div class="item-title">Default</div>
+              <input type="checkbox" name="my-checkbox" value="Movies"/>
+              <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+            </div>
+            <div class="item-inner line-item">
+              <div class="item-title">From:</div>
+              <div class="item-input line-input">
+                <input id="timeFrom" type="text" min="00:00" max="23:59" placeholder="hh:mm" readonly="readonly" class="time-picker"/>
+              </div>
+            </div>
+            <div class="item-inner line-item">
+              <div class="item-title">To:</div>
+              <div class="item-input line-input">
+                <input id="timeTo" type="text" min="00:00" max="23:59" placeholder="hh:mm" readonly="readonly" class="time-picker"/>
+              </div>
+            </div>
+          </label>
+        </li>
+        <li>
           <div class="item-content">
-            <div class="item-inner">
-              <div class="item-title">From</div>
-              <div class="item-input">
-                <input id="picker-describe" type="text" placeholder="Describe yourself" readonly=""/>
+            <div class="item-inner line-item">
+              <div class="item-title">Start Date:</div>
+              <div class="item-input line-input">
+                <input id="startDate" type="text" placeholder="Select date" readonly=""/>
               </div>
             </div>
           </div>
         </li>
       </ul>
     </div>
+    <div class="list-block"></div>
   </div>
 </div>
